@@ -12,7 +12,7 @@ type SignInFormData = {
 
 const signInFormSchema = yup.object().shape({
   email: yup.string().required('E-mail obrigatório').email('E-mail inválido'),
-  password: yup.string().required('Senha obrigatório').min(8, 'Senha com no mínimo 8 caracteres'),
+  password: yup.string().required('Senha obrigatório'),
 })
 
 export default function SignIn() {
