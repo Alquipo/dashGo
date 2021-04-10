@@ -5,8 +5,8 @@ interface PaginationItemProps {
   number: number
 }
 
-export function PaginationItem({isCurrent = false, number}: PaginationItemProps) {
-  if(isCurrent){
+export function PaginationItem({ isCurrent = false, number }: PaginationItemProps) {
+  if (isCurrent) {
     return (
       <Button
         size='sm'
@@ -23,9 +23,9 @@ export function PaginationItem({isCurrent = false, number}: PaginationItemProps)
       </Button>
     )
   }
-  
+
   return (
-    <Button 
+    <Button
       size='sm'
       fontSize='xs'
       width='4'
@@ -33,9 +33,9 @@ export function PaginationItem({isCurrent = false, number}: PaginationItemProps)
       _hover={{
         bg: 'gray.500'
       }}
-      
+
     >
-              {number}
+      {number}
 
     </Button>
   )
